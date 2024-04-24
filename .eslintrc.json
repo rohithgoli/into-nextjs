@@ -1,3 +1,25 @@
+/*
+core-web-vitals --> 
+  What ?
+    + a set of metrics that measure real-world user experience for loading performance, interactivity & visual stability of the page
+      LCP, FID, CLS
+  Why ?
+    + recommended to acheive good Core Web Vitals for success with Search & to ensure a great user experience
+  
+  Hence using next/core-web-vitals in ESLint config, warns us when we write code
+    in our Next.js project that affects core web vitals.
+
+*/
+
+/* 
+standard --> an ESLint config for Consistent code styling in addition to default Next Config
+              for more quality of your codebase.
+*/
+/* 
+plugin:tailwindcss/recommended --> an ESLint config for tailwindCSS
+*/
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals",
+  "standard", "plugin:tailwindcss/recommended",
+  "prettier"]
 }
